@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-cmp{
+    display: flex;
+    background-color: #8d4491;
+    min-height: fit-content;
+    padding: 20px;
+}
+.contact{
+    flex: 1;
+}
+.icons{
+    padding-right: 5px ;
+    filter: invert(1);
+}
+.contact-details {
+    margin-bottom: 5px;
+    display: flex;
+    color: white;
+}
+.name {
+    color: white;
+}
+.nav-cmp{
+    flex: 1;
+    padding-left: 40px;
+    text-align: right;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list{
+    display: inline-block;
+    
+}
+.nav-list a:hover{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+.nav-list_items{
+    display: inline;
+    margin-left: 20px;
+    font-size: large;
+}
+.main-cmp{
+    margin: 40px;
+}
+section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about{
+    margin: 20px auto;
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+.right-cmp{
+    margin: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 600px;
+    flex: 1;
+}
+.right-cmp h1{
+    font-size: 60px;
+    color: #8d4491;
+}
+.right-cmp p{
+    font-size: 19px;
+    line-height: 20px;
+    color: #757d77;
+
+}
+.skills ,.projects , .recommendations, .form {
+    padding: 40px 50px;
+    border-radius: 10px; 
+    margin: 20px auto; 
+    max-width: 1200px; 
+}
+
+.skills h2, .projects h2 , .recommendations h2{
+    color: #8d4491; /* Accent color */
+    font-size: 2rem; /* Larger and responsive font size */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    text-transform: uppercase; /* Style the text */
+    font-weight: 700; /* Make the text bold */
+}
+
+.card-cmp {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row on smaller screens */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center align all cards */
+    margin-top: 20px;
+}
+
+.card {
+    padding: 20px;
+    text-align: center;
+    min-width: 180px; /* Minimum width for consistency */
+    max-width: 250px; /* Prevent the card from getting too wide */
+    background-color: #ffffff; /* White card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card img {
+    max-width: 50px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+.card p {
+    font-size: 1rem; /* Standard text size */
+    color: #555; /* Soft text color */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.card p:first-child {
+    font-weight: 600; /* Highlight skill name */
+    color: #333; /* Darker text for emphasis */
+}
+.project-list_item{
+    margin: 0 20px;
+    text-align: center;
+}
+.project-list_item h4{
+    font-size: 20px;
+}
+.project-list_item li{
+    margin-left: 45px;
+    padding: 10px 0;
+}
+hr{
+    width: 50%; 
+    margin: 10px auto; 
+    border: 1px solid #ccc;
+}
+.form {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background for the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Center and limit width */
+    margin: 20px auto; /* Center the section on the page */
+    text-align: center;
+}
+
+.form h3 {
+    font-size: 1.8rem; /* Larger heading */
+    color: #8d4491; /* Accent color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.form-cmp form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+.form-cmp input,
+.form-cmp textarea {
+    
+    padding: 10px; /* Inner padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Text size */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.form-cmp input:focus,
+.form-cmp textarea:focus {
+    border-color: #8d4491; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(141, 68, 145, 0.5); /* Add glowing effect on focus */
+    outline: none; /* Remove default outline */
+}
+
+.form-button {
+    padding: 10px 20px; /* Add spacing inside the button */
+    background-color: #8d4491; /* Button color */
+    color: #fff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and press effect */
+}
+
+.form-button:hover {
+    background-color: #a35ca6; /* Lighter shade on hover */
+}
+
+.form-button:active {
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+.gototop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
